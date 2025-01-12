@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="Trumpland (TRUMP) Token - Make Crypto Great Again!" />
+  <meta name="keywords" content="Solana, Trump, Trumpland, Crypto, Meme Token" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trumpland Token - Make Crypto Great Again!</title>
+
+  <style>
+    /* ------------------------------
+       BASIC RESET / STYLES
+    ------------------------------ */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Helvetica", "Arial", sans-serif;
+    }
+
+    body {
+      color: #333;
+      background: #fdfdfd;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: #f0c244; /* Gold-ish color for fun */
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* ------------------------------
+       HEADER
+    ------------------------------ */
+    header {
+      background: #2b2b2b;
+      color: #fff;
+      padding: 1rem;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+    header p {
+      font-size: 1.1rem;
+      opacity: 0.9;
+    }
+
+    /* ------------------------------
+       HERO SECTION
+    ------------------------------ */
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem 1rem;
+      text-align: center;
+      background: linear-gradient(135deg, #fdfdfd 60%, #fff6d1);
+    }
+    .hero h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      max-width: 600px;
+      font-size: 1rem;
+      margin-bottom: 1.5rem;
+      line-height: 1.5;
+    }
+    .token-info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 1rem 0;
+    }
+    .token-address {
+      margin-bottom: 0.5rem;
+      font-weight: bold;
+      word-break: break-all;
+    }
+    .copy-btn {
+      background-color: #f0c244; 
+      border: none;
+      padding: 0.7rem 1.2rem;
+      font-size: 0.9rem;
+      cursor: pointer;
+      border-radius: 4px;
+      transition: background-color 0.3s;
+    }
+    .copy-btn:hover {
+      background-color: #d4a316;
+    }
+    .dex-links {
+      margin-top: 1rem;
+    }
+    .dex-links a {
+      margin: 0 0.5rem;
+      font-weight: bold;
+    }
+
+    /* ------------------------------
+       ROADMAP SECTION
+    ------------------------------ */
+    .roadmap {
+      padding: 3rem 1rem;
+      background: #fff;
+      text-align: center;
+    }
+    .roadmap h2 {
+      font-size: 1.6rem;
+      margin-bottom: 2rem;
+    }
+    .phase-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .phase {
+      background: #f8f8f8;
+      border-radius: 8px;
+      padding: 1.5rem;
+      flex: 1 1 300px;
+      max-width: 300px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .phase h3 {
+      font-size: 1.2rem;
+      margin-bottom: 0.8rem;
+      color: #f0c244;
+    }
+    .phase ul {
+      list-style: disc;
+      text-align: left;
+      padding-left: 1.2rem;
+      font-size: 0.9rem;
+      margin-top: 0.5rem;
+      line-height: 1.5;
+    }
+
+    /* ------------------------------
+       FOOTER
+    ------------------------------ */
+    footer {
+      background: #2b2b2b;
+      color: #fff;
+      text-align: center;
+      padding: 1.5rem 1rem;
+      margin-top: 2rem;
+    }
+    .footer-links {
+      margin: 0.5rem 0;
+    }
+    .footer-links a {
+      margin: 0 0.5rem;
+    }
+    footer p {
+      font-size: 0.9rem;
+      opacity: 0.9;
+      margin-top: 1rem;
+    }
+
+    /* Responsive Media Queries */
+    @media (max-width: 600px) {
+      .hero h2 {
+        font-size: 1.5rem;
+      }
+      .phase {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===================
+       HEADER
+  ===================== -->
+  <header>
+    <h1>Trumpland Token</h1>
+    <p>Make Crypto Great Again!</p>
+  </header>
+
+  <!-- ===================
+       HERO / TOKEN INFO
+  ===================== -->
+  <section class="hero">
+    <h2>Welcome to Trumpland!</h2>
+    <p>Trumpland (TRUMP) Token is a fun, meme-driven project built on Solana. Join us in our quest to "acquire Greenland," create hilarious memes, and make the crypto space great again. Get your tokens, stake a claim, and help shape the future of Trumpland!</p>
+
+    <!-- Token Info Section -->
+    <div class="token-info">
+      <div class="token-address" id="tokenAddress">
+        <!-- Replace this with your actual Solana contract address -->
+        So11111111111111111111111111111111111111112 
+      </div>
+      <button class="copy-btn" id="copyBtn">Copy Address</button>
+
+      <!-- DEX Links -->
+      <div class="dex-links">
+        <p>Buy or Trade on:</p>
+        <a href="https://raydium.io/" target="_blank" rel="noopener">Raydium</a> | 
+        <a href="https://www.orca.so/" target="_blank" rel="noopener">Orca</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================
+       ROADMAP
+  ===================== -->
+  <section class="roadmap">
+    <h2>Roadmap</h2>
+    <div class="phase-container">
+      <!-- Phase 1 -->
+      <div class="phase">
+        <h3>Phase 1: Pre-Launch</h3>
+        <ul>
+          <li>Finalize Concept & Branding</li>
+          <li>Website & Whitepaper Release</li>
+          <li>Initial Meme Campaign & Community Setup</li>
+        </ul>
+      </div>
+      <!-- Phase 2 -->
+      <div class="phase">
+        <h3>Phase 2: Token Launch</h3>
+        <ul>
+          <li>Fair Launch on Solana</li>
+          <li>Liquidity on Raydium/Orca</li>
+          <li>Community Airdrop & Meme Contests</li>
+        </ul>
+      </div>
+      <!-- Phase 3 -->
+      <div class="phase">
+        <h3>Phase 3: Post-Launch</h3>
+        <ul>
+          <li>NFT Collections: "Trumpland Vacation Homes"</li>
+          <li>Governance & Voting Rights</li>
+          <li>Celebrity & Influencer Endorsements</li>
+        </ul>
+      </div>
+      <!-- Phase 4 -->
+      <div class="phase">
+        <h3>Phase 4: Ongoing Expansion</h3>
+        <ul>
+          <li>Staking & Rewards</li>
+          <li>Community-driven "Trumpland" Decisions</li>
+          <li>Merchandise & IRL Events</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================
+       FOOTER
+  ===================== -->
+  <footer>
+    <div class="footer-links">
+      <!-- Replace # with your social links or Discord/Telegram invites -->
+      <a href="#" target="_blank" rel="noopener">Twitter</a> |
+      <a href="#" target="_blank" rel="noopener">Telegram</a> |
+      <a href="#" target="_blank" rel="noopener">Discord</a>
+    </div>
+    <p>© 2025 Trumpland Token. All rights reserved. | Powered on Solana</p>
+  </footer>
+
+  <!-- ===================
+       JS SCRIPTS
+  ===================== -->
+  <script>
+    // Copy-to-Clipboard
+    const copyBtn = document.getElementById('copyBtn');
+    const tokenAddress = document.getElementById('tokenAddress').textContent.trim();
+
+    copyBtn.addEventListener('click', () => {
+      // Create a temporary input to select and copy the address
+      const tempInput = document.createElement('input');
+      tempInput.value = tokenAddress;
+      document.body.appendChild(tempInput);
+      tempInput.select();
+      tempInput.setSelectionRange(0, 99999); // For mobile devices
+      document.execCommand('copy');
+      document.body.removeChild(tempInput);
+
+      // Provide user feedback (optional)
+      copyBtn.textContent = 'Copied!';
+      setTimeout(() => {
+        copyBtn.textContent = 'Copy Address';
+      }, 2000);
+    });
+  </script>
+</body>
+</html>
